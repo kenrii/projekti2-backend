@@ -1,5 +1,14 @@
-"scripts": {
+{
+  "name": "backend_projekti2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
     "start": "netlify-lambda serve src/lambda",
     "build": "netlify-lambda build src/lambda"
-   }
+   },
    
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
