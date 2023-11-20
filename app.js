@@ -1,4 +1,5 @@
 // app.js
+exports.handler = async (event, context) => {
 
 const data = {
     featuredRecipe: {
@@ -40,6 +41,8 @@ const data = {
     }
   };
   
-  export default function handler(req, res) {
-    res.status(200).json(data)
-  }
+  return {
+    statusCode: 200,
+    body: JSON.stringify(data),
+  }; 
+};
