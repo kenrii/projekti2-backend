@@ -17,6 +17,11 @@ exports.handler = async (event, context) => {
             name: "Recipe 2",
             ingredients: ["Ingredient 1", "Ingredient 2"],
             steps: ["Step 1", "Step 2"]
+          },
+          {
+            name: "Recipe 3",
+            ingredients: ["Ingredient 1", "Ingredient 2"],
+            steps: ["Step 1", "Step 2"]
           }
         ]
       },
@@ -24,12 +29,37 @@ exports.handler = async (event, context) => {
         name: "Category 2", 
         recipes: [
           {
-            name: "Recipe 3",
+            name: "Recipe 4",
             ingredients: ["Ingredient 1", "Ingredient 2"],
             steps: ["Step 1", "Step 2"] 
           },
           {
-            name: "Recipe 4",
+            name: "Recipe 5",
+            ingredients: ["Ingredient 1", "Ingredient 2"],
+            steps: ["Step 1", "Step 2"]
+          },
+          {
+            name: "Recipe 6",
+            ingredients: ["Ingredient 1", "Ingredient 2"],
+            steps: ["Step 1", "Step 2"]
+          }
+        ]
+      },
+      category3: {
+        name: "Category 3", 
+        recipes: [
+          {
+            name: "Recipe 7",
+            ingredients: ["Ingredient 1", "Ingredient 2"],
+            steps: ["Step 1", "Step 2"] 
+          },
+          {
+            name: "Recipe 8",
+            ingredients: ["Ingredient 1", "Ingredient 2"],
+            steps: ["Step 1", "Step 2"]
+          },
+          {
+            name: "Recipe 9",
             ingredients: ["Ingredient 1", "Ingredient 2"],
             steps: ["Step 1", "Step 2"]
           }
@@ -38,11 +68,7 @@ exports.handler = async (event, context) => {
     };
    
     return {
-        headers: {
-          "Access-Control-Allow-Origin": "*"
-        },
       statusCode: 200,
       body: JSON.stringify(data),
     };
-   };
-   
+};
