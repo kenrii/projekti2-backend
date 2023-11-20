@@ -1,3 +1,7 @@
-[[functions]]
- name = "getRecipes"
- path = "functions/getRecipes.js"
+[build]
+ functions = "functions"
+
+[[redirects]]
+ from = "/.netlify/functions/getRecipes"
+ to = "/.netlify/functions/getRecipes"
+ status = 200
