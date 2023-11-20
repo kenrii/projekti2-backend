@@ -7,6 +7,9 @@
     "start": "netlify-lambda serve src/lambda",
     "build": "netlify-lambda build src/lambda"
    },
+   "dependencies": {
+    "netlify-lambda": "^1.0.0"
+  },
    
   "keywords": [],
   "author": "",
